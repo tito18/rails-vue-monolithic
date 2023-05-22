@@ -13,4 +13,5 @@ plugins:
 rules: {
   semi: ['error', 'always'],
   quotes: ['error', 'single'],
+  import/no-extraneous-dependencies: [error, { devDependencies: true }]
 }
