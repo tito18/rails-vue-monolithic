@@ -148,7 +148,20 @@
     - h1 {
         text-decoration: underline;
     } 
-3. 
+
+# Hotreload after updates on app/views
+1. yarn add -D vite-plugin-full-reload
+2. Update vite.config.ts
+    - import { defineConfig } from 'vite'
+    import RubyPlugin from 'vite-plugin-ruby'
+    import FullReload from 'vite-plugin-full-reload'
+    
+    export default defineConfig({
+        plugins: [
+            RubyPlugin(),
+            FullReload(['config/routes.rb', 'app/views/**/*'], { delay: 200 })
+        ],
+    })
 
 # Infography
 - Rails 6 API authentication with JWT and Devise gem https://brdn.design/articles/rails-6-api-authentication-with-jwt-and-devise-gem
