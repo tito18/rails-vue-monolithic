@@ -126,4 +126,18 @@
     end
 
 # Vue with vite
-1. 
+1. Add to Gemfile
+    - gem 'vite_rails'
+2. bundle
+3. bundle exec vite install
+4. touch app/controllers/vue_controller.rb
+5. Add to app/controllers/vue_controller.rb
+    - class VueController < ApplicationController
+    - end
+6. Add to config/routes.rb
+    - get "vue/index"
+    - root to: "vue#index"
+7. mkdir app/views/vue
+8. touch app/views/vue/index.html.erb
+9. Add to app/views/vue/index.html.erb
+    - <h1>Hej fran andra sidan</h1>

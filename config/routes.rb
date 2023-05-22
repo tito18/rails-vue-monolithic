@@ -12,4 +12,6 @@ Rails.application.routes.draw do
       sessions: 'sessions',
       registrations: 'registrations'
   }
+  get "vue/index"
+  root to: "vue#index"
 end
