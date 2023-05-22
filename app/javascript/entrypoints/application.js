@@ -1,28 +1,22 @@
-// To see this message, add the following to the `<head>` section in your
-// views/layouts/application.html.erb
-//
-//    <%= vite_client_tag %>
-//    <%= vite_javascript_tag 'application' %>
-console.log('Vite ⚡️ Rails')
+import { createApp } from 'vue/dist/vue.esm-bundler';
+import PrimeVue from 'primevue/config';
+import App from '../App.vue';
 
-// If using a TypeScript entrypoint file:
-//     <%= vite_typescript_tag 'application' %>
-//
-// If you want to use .jsx or .tsx, add the extension:
-//     <%= vite_javascript_tag 'application.jsx' %>
+// theme
+import 'primevue/resources/themes/lara-light-indigo/theme.css';
 
-console.log('Visit the guide for more information: ', 'https://vite-ruby.netlify.app/guide/rails')
+// core
+import 'primevue/resources/primevue.min.css';
 
-// Example: Load Rails libraries in Vite.
-//
-// import * as Turbo from '@hotwired/turbo'
-// Turbo.start()
-//
-// import ActiveStorage from '@rails/activestorage'
-// ActiveStorage.start()
-//
-// // Import all channels.
-// const channels = import.meta.globEager('./**/*_channel.js')
+// const app = createApp({
+//   data() {
+//     return {
+//       course: 'Intro to Vue 3 and Rails 7'
+//     }
+//   }
+// })
 
-// Example: Import a stylesheet in app/frontend/index.css
-// import '~/index.css'
+const app = createApp(App);
+app.use(PrimeVue);
+// app.component('Button', Button)
+app.mount('#app');

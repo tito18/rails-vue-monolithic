@@ -163,6 +163,13 @@
         ],
     })
 
+# Add vue with vite
+1. yarn add vue@3.2.33
+2. yarn add @vitejs/plugin-vue 
+
+# Add primevue
+1. yarn add primevue
+
 # Infography
 - Rails 6 API authentication with JWT and Devise gem https://brdn.design/articles/rails-6-api-authentication-with-jwt-and-devise-gem
 - Ruby-on-Rails and VueJS tutorial https://bootrails.com/blog/ruby-on-rails-and-vuejs-tutorial/
