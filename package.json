@@ -1,12 +1,16 @@
 {
   "devDependencies": {
-    "vite": "^4.3.8",
-    "vite-plugin-full-reload": "^1.0.5",
-    "vite-plugin-ruby": "^3.2.2"
+    "eslint": "^7.32.0 || ^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-vue": "^9.13.0"
   },
   "dependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
     "primevue": "^3.29.1",
+    "vite": "^4.3.8",
+    "vite-plugin-full-reload": "^1.0.5",
+    "vite-plugin-ruby": "^3.2.2",
     "vue": "3.2.33"
   }
 }

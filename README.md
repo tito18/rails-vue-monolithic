@@ -170,6 +170,9 @@
 # Add primevue
 1. yarn add primevue
 
+# Add eslint
+1. npm init @eslint/config
+
 # Infography
 - Rails 6 API authentication with JWT and Devise gem https://brdn.design/articles/rails-6-api-authentication-with-jwt-and-devise-gem
 - Ruby-on-Rails and VueJS tutorial https://bootrails.com/blog/ruby-on-rails-and-vuejs-tutorial/
