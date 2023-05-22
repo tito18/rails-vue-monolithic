@@ -125,7 +125,7 @@
 
     end
 
-# Vue with vite
+# Add vite
 1. Add to Gemfile
     - gem 'vite_rails'
 2. bundle
@@ -141,3 +141,15 @@
 8. touch app/views/vue/index.html.erb
 9. Add to app/views/vue/index.html.erb
     - <h1>Hej fran andra sidan</h1>
+
+# Add custom css
+1. touch app/javascript/frontend/entrypoints/application.css
+2. Add to app/javascript/frontend/entrypoints/application.css
+    - h1 {
+        text-decoration: underline;
+    } 
+3. 
+
+# Infography
+- Rails 6 API authentication with JWT and Devise gem https://brdn.design/articles/rails-6-api-authentication-with-jwt-and-devise-gem
+- Ruby-on-Rails and VueJS tutorial https://bootrails.com/blog/ruby-on-rails-and-vuejs-tutorial/
