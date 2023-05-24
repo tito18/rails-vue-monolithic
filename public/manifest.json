@@ -1,0 +1,77 @@
+{
+  "../../node_modules/primevue/resources/images/color.png": {
+    "file": "assets/color-473bc8ca.png",
+    "src": "../../node_modules/primevue/resources/images/color.png"
+  },
+  "App.vue": {
+    "file": "assets/App-d9187089.vue",
+    "src": "App.vue"
+  },
+  "Layout.vue": {
+    "file": "assets/Layout-16b24bdb.vue",
+    "src": "Layout.vue"
+  },
+  "Login.vue": {
+    "file": "assets/Login-00feede8.vue",
+    "src": "Login.vue"
+  },
+  "entrypoints/application.css": {
+    "file": "assets/application-98cd6762.css",
+    "src": "entrypoints/application.css"
+  },
+  "entrypoints/application.js": {
+    "assets": [
+      "assets/color-473bc8ca.png"
+    ],
+    "css": [
+      "assets/application-98cd6762.css"
+    ],
+    "file": "assets/application-287b6d54.js",
+    "imports": [
+      "entrypoints/views/account/index.js"
+    ],
+    "isEntry": true,
+    "src": "entrypoints/application.js"
+  },
+  "entrypoints/assets/base.css": {
+    "file": "assets/base-3d365de7.css",
+    "isEntry": true,
+    "src": "entrypoints/assets/base.css"
+  },
+  "entrypoints/router/account.routes.js": {
+    "file": "assets/account-5a80d72a.js",
+    "imports": [
+      "entrypoints/views/account/index.js"
+    ],
+    "isEntry": true,
+    "src": "entrypoints/router/account.routes.js"
+  },
+  "entrypoints/router/index.js": {
+    "file": "assets/index-540c49f1.js",
+    "imports": [
+      "entrypoints/views/account/index.js"
+    ],
+    "isEntry": true,
+    "src": "entrypoints/router/index.js"
+  },
+  "entrypoints/stores/auth.store.js": {
+    "file": "assets/auth-4ed993c7.js",
+    "isEntry": true,
+    "src": "entrypoints/stores/auth.store.js"
+  },
+  "entrypoints/stores/index.js": {
+    "file": "assets/index-4ed993c7.js",
+    "isEntry": true,
+    "src": "entrypoints/stores/index.js"
+  },
+  "entrypoints/stores/users.store.js": {
+    "file": "assets/users-4ed993c7.js",
+    "isEntry": true,
+    "src": "entrypoints/stores/users.store.js"
+  },
+  "entrypoints/views/account/index.js": {
+    "file": "assets/index-b1bde8da.js",
+    "isEntry": true,
+    "src": "entrypoints/views/account/index.js"
+  }
+}
