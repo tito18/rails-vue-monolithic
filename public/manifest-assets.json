@@ -1,0 +1,14 @@
+{
+  "entrypoints/App.vue": {
+    "file": "assets/App-d9187089.vue",
+    "src": "entrypoints/App.vue"
+  },
+  "entrypoints/views/account/Layout.vue": {
+    "file": "assets/Layout-16b24bdb.vue",
+    "src": "entrypoints/views/account/Layout.vue"
+  },
+  "entrypoints/views/account/Login.vue": {
+    "file": "assets/Login-00feede8.vue",
+    "src": "entrypoints/views/account/Login.vue"
+  }
+}

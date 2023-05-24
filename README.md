@@ -125,5 +125,54 @@
 
     end
 
-# Vue with vite
-1. 
+# Add vite
+1. Add to Gemfile
+    - gem 'vite_rails'
+2. bundle
+3. bundle exec vite install
+4. touch app/controllers/vue_controller.rb
+5. Add to app/controllers/vue_controller.rb
+    - class VueController < ApplicationController
+    - end
+6. Add to config/routes.rb
+    - get "vue/index"
+    - root to: "vue#index"
+7. mkdir app/views/vue
+8. touch app/views/vue/index.html.erb
+9. Add to app/views/vue/index.html.erb
+    - <h1>Hej fran andra sidan</h1>
+
+# Add custom css
+1. touch app/javascript/frontend/entrypoints/application.css
+2. Add to app/javascript/frontend/entrypoints/application.css
+    - h1 {
+        text-decoration: underline;
+    } 
+
+# Hotreload after updates on app/views
+1. yarn add -D vite-plugin-full-reload
+2. Update vite.config.ts
+    - import { defineConfig } from 'vite'
+    import RubyPlugin from 'vite-plugin-ruby'
+    import FullReload from 'vite-plugin-full-reload'
+    
+    export default defineConfig({
+        plugins: [
+            RubyPlugin(),
+            FullReload(['config/routes.rb', 'app/views/**/*'], { delay: 200 })
+        ],
+    })
+
+# Add vue with vite
+1. yarn add vue@3.2.33
+2. yarn add @vitejs/plugin-vue 
+
+# Add primevue
+1. yarn add primevue
+
+# Add eslint
+1. npm init @eslint/config
+
+# Infography
+- Rails 6 API authentication with JWT and Devise gem https://brdn.design/articles/rails-6-api-authentication-with-jwt-and-devise-gem
+- Ruby-on-Rails and VueJS tutorial https://bootrails.com/blog/ruby-on-rails-and-vuejs-tutorial/

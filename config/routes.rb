@@ -12,4 +12,7 @@ Rails.application.routes.draw do
       sessions: 'sessions',
       registrations: 'registrations'
   }
+  # get "vue/index"
+  root to: "vue#index"
+  match "*path", to: "vue#index", format: false, via: :get
 end
